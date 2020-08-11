@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background: url(img/defa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 1px black;
+}
+
+body #weatherContainer {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+}
+
+body #weatherContainer h1 {
+  font-size: 42px;
+  margin: 5px;
+}
+
+body #weatherContainer hr {
+  background: white;
+}
+/*# sourceMappingURL=style.css.map */
