@@ -17,7 +17,7 @@ body {
 }
 
 body #weatherContainer {
-  padding: 50px;
+  padding: 75px;
   background: rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 0px 5px black;
           box-shadow: 0px 0px 5px black;
