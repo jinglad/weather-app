@@ -4,7 +4,7 @@ let searchMethod = "q";
 
 
 function searchWeather(searchTerm) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appid=${appId}&units=${units}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appid=${appId}&units=${units}`)
         .then(res => res.json())
         .then(data => {
             init(data);
@@ -12,7 +12,7 @@ function searchWeather(searchTerm) {
 }
 
 function init(responseFromServer) {
-    // console.log(responseFromServer);
+    console.log(responseFromServer);
     switch (responseFromServer.weather[0].main) {
         case 'Clear':
             document.body.style.backgroundImage = "url(img/clear.jpeg)";
